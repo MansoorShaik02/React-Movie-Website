@@ -1,0 +1,12 @@
+.NavigationBar a{ 
+    font-size: 32px;
+ color: white;
+text-decoration: none;
+margin-right: 10px;
+    
+}
+.NavigationBar {
+    height: 45px;
+    background-color: black;
+  
+}

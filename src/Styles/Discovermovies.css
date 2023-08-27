@@ -1,0 +1,12 @@
+.discovermovies {
+    height: 100%;
+    width: 100%;
+  
+    margin-top: 10px;
+background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
