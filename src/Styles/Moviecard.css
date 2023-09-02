@@ -16,11 +16,12 @@ img {
 .moviecardwrapper {
    height: 100%;
    display: flex;
+   width: 100%;
 
    z-index: 999;
 }
 .imageclass {
-    width: 200px;
+    /* width: 200px; */
     position: relative;
 }
 
@@ -38,6 +39,7 @@ img {
     opacity: 0;
     transition: 0.1s;
     z-index: 999;
+    font-size: 20px;
 }
 
 .content:hover {
@@ -46,7 +48,7 @@ img {
 }
 
 .imageclass:hover {
-    transform: scale(1.2);
+    transform: scale(1);
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -63,12 +65,15 @@ img {
     height:300px;
     z-index:0;
     border: 1px solid rgb(99, 99, 99);
+    font-size: 10px;
 }
 
 .cards:hover {
-    transform: scale(1.2);
+    transform: scale(1);
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
+.content p {
+    width: fit-content;
+}
 

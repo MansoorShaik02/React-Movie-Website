@@ -1,0 +1,47 @@
+.Similar  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  
+}
+.moviedestination {
+
+    width: fit-content;
+  ;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.moviedestination img {
+   height: 420px;
+   margin: 10px;
+}
+.movietitle {
+    font-size: 80px;
+    color:rgb(97, 97, 165);
+}
+.movieoverview {
+    font-size: 30px;
+    margin: 10px;
+}
+.moviereleasedate {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+.overalldiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.moviepicture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moviepicture img {
+    height: 300px;
+}

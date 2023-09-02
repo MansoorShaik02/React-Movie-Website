@@ -38,8 +38,8 @@
 }
  */
 .App {
-background-color: black;
-
+/* background-color: #00020a;
+ */
 height: 100%;
 width: 100%;
 
@@ -54,5 +54,12 @@ width: 100%;
 
  html,body {
   height: 100%;
+  background-color: black;
  }
-
+/* :root {
+  --text: #f0f2ff;
+  --background: #00020a;
+  --primary: #0429fb;
+  --secondary: #010b41;
+  --accent: #1336fb;
+} */

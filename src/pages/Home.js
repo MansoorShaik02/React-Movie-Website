@@ -13,10 +13,21 @@ import '../Styles/Home.css'
 import StarIcon from '@mui/icons-material/Star';
 import Moviecard from '../Components/Moviecard';
 import Imagenotavailable from '../posters/Imagenotavailable.png';
+import { ReactFitty } from "react-fitty";
 function Home() {
     const [slidermovie, setslidermovie] = useState([])
     const [popular, setpopular] = useState([])
     const [tvpopular, settvpopular] = useState([])
+
+    const getRatingColor = (rating) => {
+        if (rating > 8) {
+            return 'green';
+        } else if (rating > 6) {
+            return 'yellow';
+        } else {
+            return 'red';
+        }
+    };
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=dd4f1bd1adf0dca4a7f30b9e36309e4f`).then(res => res.json()).then(data => { setslidermovie(data.results) }, [])
@@ -65,17 +76,18 @@ function Home() {
                 transitionDuration={500}>
                 {slidermovie.map(movie =>
                 (
-                    <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`} >
+                    <Link style={{ textDecoration: "none", color: "white" }} to={`/detailsmovie/${movie.id}`} >
                         <div className="posterImage">
                             <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                         </div>
                         <div className="posterImage__overlay">
-                            <div className="posterImage__title">{movie ? movie.original_title : ""}</div>
+                            <div className="posterImage__title"><ReactFitty className='posterImage__title'>{movie ? movie.original_title : ""}
+                            </ReactFitty></div>
                             <div className="posterImage__runtime">
                                 {movie ? movie.release_date : ""}
-                                <span className="posterImage__rating">
-                                    {movie ? movie.vote_average : ""}
+                                <span className="posterImage__rating" style={{ color: getRatingColor(movie.vote_average) }}>
                                     <StarIcon />{" "}
+                                    {movie ? movie.vote_average : ""}
                                 </span>
                             </div>
                             <div className="posterImage__description">{movie ? movie.overview : ""}</div>
@@ -84,7 +96,7 @@ function Home() {
                 )
                 )}
             </Carousel>
-            <p>POPULAR</p>
+            <p className='populartag'>POPULAR</p>
 
 
 
@@ -98,7 +110,7 @@ function Home() {
                 ))} </div>
 
 
-            <p>TV</p>
+            <p className='populartag'>TV</p>
             <div className='populartv'>
                 {
                     tvpopular.map(tv => (

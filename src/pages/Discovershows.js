@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import Moviecard from '../Components/Moviecard';
 import { Link } from 'react-router-dom';
+import "../Styles/Discovershows.css"
 
 function Discovershows() {
     const [tvmain, settvmain] = useState([]);
@@ -18,7 +19,7 @@ function Discovershows() {
 
 
     return (
-        <div className='discovermovies'> {
+        <div className='discovershows'> {
 
             tvmain.map(tvshow => (
                 <Link to={`/detailstv/${tvshow.id}`}>

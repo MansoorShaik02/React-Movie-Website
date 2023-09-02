@@ -1,12 +1,15 @@
 .discovermovies {
-    height: 100%;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+gap: 15px;
+  flex-wrap: wrap;
   
-    margin-top: 10px;
-background-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-left: 10px;
+    
+
+
+}
+
+.discovermovies img {
+  height: 250px;
+ border-radius: 20px;
 }

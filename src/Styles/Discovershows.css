@@ -1,0 +1,17 @@
+
+
+.discovershows{
+    /*  display: flex;
+     flex-direction: row; */
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+gap: 15px;
+     flex-wrap: wrap;
+     
+ }
+
+
+.discovershows img {
+    height: 250px;
+   border-radius: 20px;
+}

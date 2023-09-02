@@ -1,5 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 p {
-color : white;
+color : #f0f2ff;
 }
 
 div {
@@ -37,7 +41,7 @@ div {
     width: 100%;
     justify-content: flex-end;
     align-items: flex-start;
-    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    background-image: linear-gradient(rgb(0,0,0,0), #1f0b28);
     opacity: 1;
     transition: opacity .3s;
 }   
@@ -51,11 +55,14 @@ div {
     font-size: 4rem;
     margin-bottom: 0.4rem;
     text-align: left;
+  /*   font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .posterImage__runtime {
     font-size: 2rem;
     margin-bottom: 1rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .posterImage__rating {
@@ -63,12 +70,13 @@ div {
 }
 
 .posterImage__description {
-    font-style: italic;
-    font-size: 1rem;
+  font-weight: bold;
+    font-size: 20px;
     margin-bottom: 0.25rem;
     display: flex;
     text-align: left;
     width: 50%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .popularmovies ,.populartv{
@@ -85,6 +93,11 @@ div {
    height: 250px;
    border-radius: 20px;
 }
-
+.populartag {
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Abel', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+}
 
 

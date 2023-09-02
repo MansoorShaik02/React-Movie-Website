@@ -1,12 +1,17 @@
 .NavigationBar a{ 
     font-size: 32px;
- color: white;
+/*  color: rgb(56, 99, 199); */
 text-decoration: none;
 margin-right: 10px;
+color: rgb(255, 255, 255);
+font-family: 'Abel', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+/* font-weight: bold; */
     
 }
 .NavigationBar {
+    background-color: /* rgb(56, 99, 199) */ black;
     height: 45px;
-    background-color: black;
+
   
 }
