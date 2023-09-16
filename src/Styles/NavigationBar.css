@@ -12,6 +12,103 @@ font-family: 'Libre Franklin', sans-serif;
 .NavigationBar {
     background-color: /* rgb(56, 99, 199) */ black;
     height: 45px;
+   
+
 
   
+}
+
+
+
+.hamburgermenu  {
+    display: none;
+       width: 100%;
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       position: absolute;
+       align-items: end;
+    }
+    .hamburgermenu button {
+        color: white;
+       background-color: transparent;
+        border:none;
+    
+    }
+    .hamburgermenu svg {
+        font-size : 70px;
+        margin: 10px;
+    }
+
+.navbardiv {
+    width: 100%;
+  height: 45px;
+
+  display: flex;
+  
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 425.587px) {
+    .NavigationBar {
+     display: flex;
+ 
+    }
+    
+.navbardiv {
+    width: 100%;
+  height: 100px;
+
+  display: flex;
+
+
+
+}
+ 
+ 
+ #close a {
+     display: none;
+ }}
+
+
+ @media only screen and (min-width: 605px) {
+    .hamburgermenu{
+     display: none;
+     width: 100%;
+     background-color: brown;
+    }
+    #open .NavigationBar {
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 200px;
+        background-color: rgb(246, 12, 55);
+        
+    }
+} 
+
+
+#open a {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+  #open {
+    height: 100vh;
+    width: 100vw;
+display:flex;
+flex-direction: column;
+} 
+
+#open .NavigationBar {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 200px;
 }

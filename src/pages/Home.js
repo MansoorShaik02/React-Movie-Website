@@ -53,7 +53,7 @@ function Home() {
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2
+            items: 1
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -81,8 +81,8 @@ function Home() {
                             <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                         </div>
                         <div className="posterImage__overlay">
-                            <div className="posterImage__title"><ReactFitty className='posterImage__title'>{movie ? movie.original_title : ""}
-                            </ReactFitty></div>
+                            <div className='posterImage__title'>{movie ? movie.original_title : ""}
+                            </div>
                             <div className="posterImage__runtime">
                                 {movie ? movie.release_date : ""}
                                 <span className="posterImage__rating" style={{ color: getRatingColor(movie.vote_average) }}>

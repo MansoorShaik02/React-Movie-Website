@@ -23,7 +23,7 @@ function Discovermovies() {
         <div className='discovermovies'> {
 
             movies.map(movie => (
-                <Link to={`/detailsmovie/${movie.id}`}>
+                <Link to={`/detailsmovie/${movie.id}`} style={{ width: '100px', marginBottom: "10px" }}>
                     <Moviecard name={movie.original_title} id={movie.id} source={movie.poster_path} rating={movie.vote_average} />
                 </Link>
 

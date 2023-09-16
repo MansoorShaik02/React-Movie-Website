@@ -1,15 +1,17 @@
 .discovermovies {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr;
+
   flex-wrap: wrap;
-  
-    
 
 
 }
 
 .discovermovies img {
-  height: 250px;
+  height: 280px;
  border-radius: 20px;
+}
+
+.Link {
+  
 }

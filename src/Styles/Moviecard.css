@@ -16,12 +16,13 @@ img {
 .moviecardwrapper {
    height: 100%;
    display: flex;
-   width: 100%;
+   width: fit-content;
+
 
    z-index: 999;
 }
 .imageclass {
-    /* width: 200px; */
+     width: 200px; 
     position: relative;
 }
 
@@ -74,6 +75,6 @@ img {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .content p {
-    width: fit-content;
+    width: 100px;
 }
 

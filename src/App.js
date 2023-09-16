@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavigationBar></NavigationBar>
+        <NavigationBar></NavigationBar >
         <Routes>
           <Route path="detailsmovie/:id" element={<Movie />} />
           <Route path="detailstv/:id" element={<TVshow />} />

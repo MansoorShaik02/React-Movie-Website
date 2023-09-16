@@ -10,7 +10,7 @@ div {
     color: white;
 }
 .homeclass {
-    height: 500px;
+    width: 100%;
 }
 .homeclass  img {
     margin: auto;
@@ -90,7 +90,7 @@ div {
 }
 
 .popularmovies img, .populartv img{
-   height: 250px;
+   height: 300px;
    border-radius: 20px;
 }
 .populartag {
@@ -100,4 +100,50 @@ div {
 font-family: 'Libre Franklin', sans-serif;
 }
 
+
+@media only screen and (max-width: 425.587px) { 
+    .posterImage__description
+{
+    display: none;
+}
+.posterImage {
+    height: 300px;
+    width: 100%;
+}
+.posterImage__title {
+    font-size: 26px;
+    word-wrap: break-word;
+}
+.posterImage__overlay {
+    height: 30px;
+    padding: 0px;
+}
+
+.posterImage__runtime{
+   font-size: 20px;
+}
+
+.posterImage__rating {
+    font-size: 20px;
+}
+.popularmovies,.populartv { 
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+justify-content: space-around;
+
+  
+}
+.popularmovies img ,.populartv img{
+border-radius: 0px;
+height: 200px;
+margin-bottom: 10px;
+
+}
+
+.populartag {
+    font-size: 20px;
+}
+
+}
 
