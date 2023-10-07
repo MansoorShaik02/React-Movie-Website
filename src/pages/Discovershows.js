@@ -6,18 +6,11 @@ import "../Styles/Discovershows.css"
 
 function Discovershows() {
     const [tvmain, settvmain] = useState([]);
-
-
-
     useEffect(() => {
 
         fetch(`https://api.themoviedb.org/3/trending/tv/week?api_key=dd4f1bd1adf0dca4a7f30b9e36309e4f&language=en`).then(res => res.json()).then(data => { settvmain(data.results) }, [])
 
     })
-
-
-
-
     return (
         <div className='discovershows'> {
 
@@ -28,9 +21,7 @@ function Discovershows() {
 
             ))
         }
-
         </div>
-
     )
 
 }

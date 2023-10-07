@@ -6,12 +6,17 @@ import { useEffect } from 'react'
 import '../Styles/NavigationBar.css'
 import ReorderIcon from '@material-ui/icons/Reorder'
 import CloseIcon from '@mui/icons-material/Close';
+
 function NavigationBar() {
+    const [query, setQuery] = useState('');
+    const [movies, setMovies] = useState([]);
+    const apiKey = 'dd4f1bd1adf0dca4a7f30b9e36309e4f';
     const [navbarexpansion, setnavbarexpansion] = useState(false)
     const location = useLocation();
     useEffect(() => {
         setnavbarexpansion(false);
     }, [location]);
+
 
     return (
         <div className='navbardiv' id={navbarexpansion ? "open" : "close"}>
@@ -25,8 +30,10 @@ function NavigationBar() {
                 <Link to="/discovermovies">Movies</Link>
                 <Link to="/discovershows">Shows</Link>
                 <Link to="/upcoming">Upcoming</Link>
+                <Link to="/SearchPage">Search</Link>
 
             </div>
+
 
         </div>
 

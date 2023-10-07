@@ -1,7 +1,4 @@
 import React from 'react'
-/* import Carasoul from '../Components/Carasoul' */
-/* import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; */
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import Carousel from 'react-multi-carousel';
@@ -120,11 +117,7 @@ function Home() {
                 }
             </div>
 
-
-
-
         </div>
     )
 }
-
 export default Home

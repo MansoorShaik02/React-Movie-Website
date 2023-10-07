@@ -1,4 +1,4 @@
-.discovermovies {
+/* .discovermovies {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr  1fr 1fr;
 
@@ -14,4 +14,58 @@
 
 .Link {
   
+} */
+/* .discovermovies container */
+.discovermovies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with a minimum column width of 200px */
+  gap: 20px; /* Adjust the gap between cards */
+  justify-content: center; /* Center align the grid */
+}
+
+/* Movie cards */
+.discovermovies a {
+  width: 100%; /* Ensure links take full width of container */
+  text-decoration: none; /* Remove underlines from links */
+  display: block; /* Make links a block-level element */
+  margin-bottom: 10px; /* Add spacing between cards */
+}
+
+.discovermovies img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto; /* Let images adjust their height */
+  border-radius: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .discovermovies {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+      gap: 10px; /* Reduce gap between cards */
+  }
+}
+
+/* Additional styling for even smaller screens if needed */
+@media screen and (max-width: 425px) {
+  .discovermovies {
+      gap: 5px; /* Further reduce gap between cards for very small screens */
+  }
+}
+@media screen and (max-width: 763px) {
+  .discovershows {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column width for tablets */
+      gap: 15px; /* Increase gap between cards for tablets */
+  }
+
+  .discovershows img {
+      max-width: 100%; /* Ensure images don't exceed their container width */
+      height: auto; /* Let images adjust their height */
+      border-radius: 15px; /* Reduce border radius for tablets */
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow intensity for tablets */
+  }
+
+  /* Adjust spacing between cards for tablets */
+  .discovershows a {
+      margin-bottom: 15px;
+  }
 }

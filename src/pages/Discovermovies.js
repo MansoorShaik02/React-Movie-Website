@@ -14,8 +14,8 @@ function Discovermovies() {
 
     useEffect(() => {
 
-        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=dd4f1bd1adf0dca4a7f30b9e36309e4f&language=fr`).then(res => res.json()).then(data => { setMovies(data.results) }, [])
-
+        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=dd4f1bd1adf0dca4a7f30b9e36309e4f&language=fr`).
+            then(res => res.json()).then(data => { setMovies(data.results) }, [])
     })
 
 

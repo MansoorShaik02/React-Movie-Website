@@ -2,10 +2,8 @@ import Axios from "axios"
 import { HashRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home";
 import Discovermovies from "./pages/Discovermovies";
-
 import toprated from "./pages/toprated";
 import NavigationBar from "./Components/NavigationBar";
-
 import { useState, useEffect } from "react";
 import './App.css';
 import Moviecard from "./Components/Moviecard";
@@ -14,6 +12,7 @@ import Discovershows from "./pages/Discovershows"
 import Upcoming from "./pages/Upcoming";
 import Movie from "./pages/Movie";
 import TVshow from './pages/TVshow'
+import Searchpage from "./pages/Searchpage";
 
 function App() {
   const apikey = "dd4f1bd1adf0dca4a7f30b9e36309e4f"
@@ -28,6 +27,7 @@ function App() {
           <Route path="/discovermovies" element={<Discovermovies />} /><Route />
           <Route path="/discovershows" element={<Discovershows />} /><Route />
           <Route path="/upcoming" element={<Upcoming />} /><Route />
+          <Route path="/SearchPage" element={<Searchpage />} /><Route />
 
           {/*  <Route path="/traveldestinations" element={<Traveldestinations />} />
           <Route path="/signin" element={<Login />} /> */}

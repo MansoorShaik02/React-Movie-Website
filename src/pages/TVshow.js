@@ -38,6 +38,10 @@ function Movie() {
                     <p className='movietitle'>{getdetails.name}</p>
                     <p className='movieoverview'>{getdetails.overview}</p>
                     <p className='moviereleasedate'>Release Date : {getdetails.first_air_date}</p>
+                    <p className='moviereleasedate'>Rating: {getdetails.vote_average}</p>
+                    <p className='moviereleasedate'>Genres: {getdetails.genres?.map((genre) => genre.name).join(', ')}</p>
+
+
 
                 </div>
                 {/*      <h1>{getdetails.name}</h1>

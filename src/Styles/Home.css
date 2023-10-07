@@ -1,4 +1,4 @@
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Libre+Franklin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
@@ -20,7 +20,7 @@ div {
 }
 
 
-/* //trying out */
+/* //trying out 
 .posterImage{
     height: 600px;
 }
@@ -55,7 +55,7 @@ div {
     font-size: 4rem;
     margin-bottom: 0.4rem;
     text-align: left;
-  /*   font-family: 'Ubuntu', sans-serif; */
+  
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -80,8 +80,8 @@ div {
 }
 
 .popularmovies ,.populartv{
-   /*  display: flex;
-    flex-direction: row; */
+   display: flex;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
@@ -146,4 +146,204 @@ margin-bottom: 10px;
 }
 
 }
+
+ */
+
+ /* new responsive  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Abel&family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+/* Default styles */
+p {
+    color: #f0f2ff;
+}
+
+div {
+    color: white;
+}
+
+.homeclass {
+    width: 100%;
+}
+
+.homeclass img {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+/* Carousel styles */
+.posterImage {
+    height: 600px;
+}
+
+.posterImage > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.posterImage__overlay {
+    position: absolute;
+    padding: 2rem;
+    bottom: 0;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0, 0, 0, 0), #1f0b28);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.posterImage__overlay:hover {
+    opacity: 1;
+}
+
+.posterImage__title {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.posterImage__runtime {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.posterImage__rating {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.posterImage__description {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    text-align: left;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Popular movies and TV grid */
+.popularmovies, .populartv {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.popularmovies img, .populartv img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.populartag {
+    font-size: 2rem;
+    padding: 20px;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .homeclass img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeclass img {
+        height: 300px;
+    }
+
+    .posterImage__title {
+        font-size: 1.5rem;
+    }
+
+    .posterImage__runtime {
+        font-size: 1.2rem;
+    }
+
+    .posterImage__rating {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .posterImage {
+        height: 300px;
+    }
+
+    .posterImage__title {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
+
+    .posterImage__overlay {
+        height: auto;
+        padding: 0;
+    }
+
+    .posterImage__runtime {
+        font-size: 1rem;
+    }
+
+    .posterImage__rating {
+        font-size: 1rem;
+    }
+
+    .popularmovies, .populartv {
+        justify-content: center;
+    }
+
+    .popularmovies img, .populartv img {
+        border-radius: 0;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .populartag {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 377px) {
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+
+    .homeclass img {
+        height: auto; /* Let images adjust their height */
+    }
+
+    .popularmovies,
+    .populartv {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Display 2 cards side by side */
+        margin: 0; /* Remove margin to prevent extra space */
+        padding: 0; /* Remove padding to prevent extra space */
+        width: 100%; /* Ensure the grid takes full width */
+    }
+
+    .popularmovies img,
+    .populartv img {
+        width: 100%; /* Ensure images take full width */
+    }
+
+    .populartag {
+        padding: 10px; /* Adjust padding for better spacing */
+    }
+}
+
 

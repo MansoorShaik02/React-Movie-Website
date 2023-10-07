@@ -45,6 +45,8 @@ function Movie() {
                     <p className='movietitle'>{getdetails.title}</p>
                     <p className='movieoverview'>{getdetails.overview}</p>
                     <p className='moviereleasedate'>Release Date : {getdetails.release_date}</p>
+                    <p className='moviereleasedate'>Genres: {getdetails.genres?.map((genre) => genre.name).join(', ')}</p>
+                    <p className='moviereleasedate'>Runtime: {getdetails.runtime} minutes</p>
 
                 </div>
 
